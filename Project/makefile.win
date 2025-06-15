@@ -1,0 +1,32 @@
+# Project: Project
+# Makefile created by Red Panda C++ 3.2.2958
+
+CXX      = "g++.exe"
+CC       = "gcc.exe"
+WINDRES  = "windres.exe"
+RM       = del /q /f
+CD       = cd /d
+LIBS     = "-pg" "-Wl,--stack,12582912" "-lws2_32" "-static"
+INCS     = 
+CXXINCS  = 
+CXXFLAGS = $(CXXINCS) "-g3" "-O2" "-std=c++2a" "-pipe" "-D_DEBUG"
+CFLAGS   = $(INCS) "-g3" "-O2" "-pipe" "-D_DEBUG"
+WINDRESFLAGS = 
+OBJ      = main.o
+BIN      = Project.exe
+LINKOBJ  = "main.o"
+CLEANOBJ = "main.o" "Project.exe"
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) >NUL 2>&1
+
+Project.exe: $(OBJ)
+
+	$(CXX) $(LINKOBJ) -o "Project.exe" $(LIBS)
+
+main.o: main.cpp Server/Server.h Server/ThreadPool.h Logging/Logging.h
+	$(CXX) -c "main.cpp" -o "main.o" $(CXXFLAGS) 
