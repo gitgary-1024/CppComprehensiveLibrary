@@ -24,19 +24,21 @@
       确保已经安装了 MinGW 或者其他 C++ 编译器。
       使用编译器打开项目文件，进行编译和运行。
    2. 特别注意：  
-      ``Project/Algorithm/NumberTheory/BigInt``中的文件在使用之前记得编译。
-### 分点介绍
-	- __Future__ : 这里是未来准备实现的部分，不建议使用（或根本不能使用）
-	- Actuator : 这里是执行模拟器，你可以通过自定义解析&执行函数实现CPU的功能
-	- Algorithm : 这里是常见算法实现，Oier可以参考/批判
-	- ArtificialIntelligence : 这里是人工智能的实现，通过提供数据集便可以开始训练（别忘了实例化）
-	- EquationAndFunction : 请忽略Function，这里不是Function的定义，这里提供了解方程/组的方法
-	- Expression : 项目的源头，一个表达式类的实现，暂不支持化简
-	- Geometry : 几何大类，目前只实现了计算几何，主类在[CoordinateSystem](Project/Geometry/CoordinateSystem/CoordinateSystem.h)中，未来还会继续开发，有兴趣可以看看其他的定义
-	- Logging : 日志记录
-	- Matrix : ~~不要问我为什么不放在Geometry中~~，矩阵的计算（但在）[Project/ArtificialIntelligence/ArtificialIntelligence/Model/Public.h](Project/ArtificialIntelligence/ArtificialIntelligence/Model/Public.h)中也有实现
-	- Server : 一个服务器的实现，通过自定义解析&显示函数实现类似服务器的功能
-	- 其他文件 : 均有RedPanda-DevCpp自动生成，可以选择删除
+      ```Project/Algorithm/NumberTheory/BigInt```中的文件在使用之前记得编译。
+### 五、分点介绍
+这里主要介绍相关文件：
+    - __Future__ : 这里是未来准备实现的部分，不建议使用（或根本不能使用）  
+    - Actuator : 这里是执行模拟器，你可以通过自定义解析&执行函数实现CPU的功能  
+    - Algorithm : 这里是常见算法实现，Oier可以参考/批判  
+    - ArtificialIntelligence : 这里是人工智能的实现，通过提供数据集便可以开始训练（别忘了编译）  
+    - EquationAndFunction : 请忽略Function，这里不是Function的定义，这里提供了解方程/组的方法  
+    - Expression : 项目的源头，一个表达式类的实现，暂不支持化简  
+    - Geometry : 几何大类，目前只实现了计算几何，主类在[CoordinateSystem](Project/Geometry/CoordinateSystem/CoordinateSystem.h)中，未来还会继续开发，有兴趣可以看看其他的定义  
+    - Logging : 日志记录  
+    - Matrix : ~~不要问我为什么不放在Geometry中~~，矩阵的计算（但在）[Project/ArtificialIntelligence/ArtificialIntelligence/Model/Public.h](Project/ArtificialIntelligence/ArtificialIntelligence/Model/Public.h)中也有实现  
+    - Server : 一个服务器的实现，通过自定义解析&显示函数实现类似服务器的功能  
+    - 其他文件 : 均有RedPanda-DevCpp自动生成，可以选择删除  
+
 ### 六、版本信息
 项目当前版本为 1.0.0.0
 ### 八、许可证
